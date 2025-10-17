@@ -17,3 +17,10 @@ if (preg_match($pattern, $text, $matches)) {
 } else {
     echo "Tidak ada yang cocok!";
 }
+echo "<br>";
+$pattern = '/apple/';
+$replacement = 'banana';
+$text = 'I like apple pie.';
+
+$new_text = preg_replace($pattern, $replacement, $text);
+echo $new_text; // Output: "I like banana pie."
